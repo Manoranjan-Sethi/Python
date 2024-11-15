@@ -1,9 +1,9 @@
 # Python
 
 """
-High-level language(HLL)
-Interpreted language (HLL converted into LLL)
-Code executed is line by line for which debugging and finding errors is easy
+- High-level language(HLL)
+- Interpreted language (HLL converted into LLL)
+- Code executed is line by line for which debugging and finding errors is easy
 """
 
 # Single Line Comment
@@ -39,3 +39,34 @@ print(a)
 b = a-10
 print(b)
 print(type(b))
+
+# Float
+
+flt_1 = 71.69
+print(flt_1)
+print(type(flt_1))
+
+# String
+
+str_1 = "abcdefghijklmnopqrstuvwxyz"
+print(str_1)
+print(type(str_1))
+
+# Boolean
+
+bool_1 = True
+bool_2 = False
+print(bool_1)
+print(type(bool_2))
+
+# Complex
+
+x_1 = complex(5,-12)
+print(x_1)
+print(type(x_1))
+
+# None
+
+check = None
+print(check)
+print(type(check))
