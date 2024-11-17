@@ -1,5 +1,6 @@
 """
-Lists - Combination of data types
+Lists - Non-Primitive data type
+      - Combination of data types
       - Should have a square bracket
       - Mutable
 """
