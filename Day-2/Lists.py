@@ -1,7 +1,7 @@
 """
 Lists - Non-Primitive data type
       - Combination of data types
-      - Should have a square bracket
+      - Should have a square bracket []
       - Mutable
 """
 help(list)
