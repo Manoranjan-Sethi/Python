@@ -81,3 +81,18 @@ print(id(b[0]))
 '''As Primitive data types are immutable having same values will result in same memory locations.
 In Non-primitive data types like list and tuple having same values will result in same memory 
 location if they contain primitive values in  them.'''
+
+
+'''
+Garbage collection -> In Python garbage collection happensx time to time. Whenever the reference 
+count of an object reaches 0, its freed by the garbage collector.
+'''
+
+p=9
+r=32
+p=r  # here the p=32 and p=9 is garbage
+print(p)
+
+import gc
+gc.collect()
+gc.disable()
