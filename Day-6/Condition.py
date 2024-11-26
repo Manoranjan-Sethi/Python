@@ -44,10 +44,23 @@ else:()
 '''Taking Input form User'''
 
 x = input("Enter your string to check: ") 
-a=int(input("Enter yout number: ")) # string will convert into integer
-
 vowel_letter = "aeiou"
 if  x [-1] in vowel_letter:
     print("Vowel letter is present")
 else:
     print("Vowel letter is not present")
+
+
+# 6. Check if number is positive or negative
+a=float(input("Enter your number: ")) # string will convert into integer/float
+if a>=0:
+    print("Number is positive")
+else:
+    print("Number is negative")
+
+# 7. check if number is divisible by 3 and 5
+a=int(input("Enter your number: "))
+if a%3==0 and a%5==0:
+    print("both")
+else:
+    print("not")
