@@ -34,18 +34,19 @@ if email add is valid by first checking if its not empty
 Then check if it contains an "@" symbol
 finally check if it ends .com or .in
 '''
-email = "example@gmail.com"
+email = input("Email your email address : ") 
 
 if not email:
     print("Invalid: Email is empty.")
 
-elif "@" not in email:
-    print("Invalid: Email must contain an '@' symbol.")
-
-elif email.endswith(".com") or email.endswith(".in"):
-    print("Valid email address.")
 else:
-    print("Invalid: Email must end with '.com' or '.in'.")
+    if email.count("@")>1 or email.count("@")==0:
+        print("Invalid: Email must contain one'@' symbol.")
+
+    elif email.lower().endswith(".com") or email.lower().endswith(".in"):
+        print("Valid email address.", email.lower())
+    else:
+         print("Invalid: Email must end with '.com' or '.in'.")
 
 
 
