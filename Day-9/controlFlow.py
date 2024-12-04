@@ -42,6 +42,7 @@ Two types of comprehensions:
 1. list
 2. dict
 """
+# syntax -> name=[ans for loop]
 # Iteration
 list_itr = [i for i in range(1,6)]
 print(list_itr)
@@ -59,3 +60,14 @@ print(a)
 ans2=[i for i in range(2,25) if i%4!=0]
 ans2.reverse()
 print(ans2)
+
+"""
+Comprehension if else
+"""
+# 5. Given list of string if the string is starting with a vowel print 1 else print 0
+
+list_str1=["abc","xyz","efg","bad","good"]
+ans3=[1 if i[0] in "aeiou" else 0 for i in list_str1]
+print(ans3)
+print(ans3.count(0)) # to count the number of 0s
+
