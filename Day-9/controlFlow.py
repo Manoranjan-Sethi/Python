@@ -13,15 +13,21 @@ else:
 
 # 2. Accept number from user and print prime number within the range
 
-num=int(input("Enter the number to check for Prime : "))
+start=int(input("Enter the starting number for the range: "))
+end=int(input("Enter the ending number for the range: "))
 
-if num<2:
-    print("Cannot check for this number")
+if start>end:
+    print("This is not possible")
 else:
-    for i in range(2,num):
-        for j in num:
-            print(f"i={i},j={j}")
-
+    print(f"Prime Numbers between {start} and {end} are as follows:-")
+    for num in range(start,end+1):
+        if num<2:
+            continue
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            print(num)
 
 # 3. Add 2 Lists
 
@@ -70,4 +76,3 @@ list_str1=["abc","xyz","efg","bad","good"]
 ans3=[1 if i[0] in "aeiou" else 0 for i in list_str1]
 print(ans3)
 print(ans3.count(0)) # to count the number of 0s
-
