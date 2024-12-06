@@ -1,33 +1,33 @@
 # 1. If a number is Prime Number 
 
-num=int(input("Enter the number to check for Prime : "))
-if num<2:
-    print("Cannot check for this number")
-else:
-    for i in range(2,num):
-        if num%i==0:
-            print ("Not Prime Number")
-            break
-    else:
-        print ("Prime Number")
+# num=int(input("Enter the number to check for Prime : "))
+# if num<2:
+#     print("Cannot check for this number")
+# else:
+#     for i in range(2,num):
+#         if num%i==0:
+#             print ("Not Prime Number")
+#             break
+#     else:
+#         print ("Prime Number")
 
 # 2. Accept number from user and print prime number within the range
 
-start=int(input("Enter the starting number for the range: "))
-end=int(input("Enter the ending number for the range: "))
+# start=int(input("Enter the starting number for the range: "))
+# end=int(input("Enter the ending number for the range: "))
 
-if start>end:
-    print("This is not possible")
-else:
-    print(f"Prime Numbers between {start} and {end} are as follows:-")
-    for num in range(start,end+1):
-        if num<2:
-            continue
-        for i in range(2,num):
-            if num%i==0:
-                break
-        else:
-            print(num)
+# if start>end:
+#     print("This is not possible")
+# else:
+#     print(f"Prime Numbers between {start} and {end} are as follows:-")
+#     for num in range(start,end+1):
+#         if num<2:
+#             continue
+#         for i in range(2,num):
+#             if num%i==0:
+#                 break
+#         else:
+#             print(num)
 
 # 3. Add 2 Lists
 
@@ -68,7 +68,7 @@ ans2.reverse()
 print(ans2)
 
 """
-Comprehension if else
+List Comprehension if else
 """
 # 5. Given list of string if the string is starting with a vowel print 1 else print 0
 
@@ -76,3 +76,21 @@ list_str1=["abc","xyz","efg","bad","good"]
 ans3=[1 if i[0] in "aeiou" else 0 for i in list_str1]
 print(ans3)
 print(ans3.count(0)) # to count the number of 0s
+
+"""
+Dict Comprehension
+"""
+list_str1=["ab","xyz","ef","baduj","gortodhfg"]
+ans4={i:len(i) for i in list_str1}
+print(ans4)
+
+# 6. Pick up thr values ranging from 1 to 10 make cube of it where values are keys
+
+ans5={i:i**3 for i in range(1,11)}
+print(ans5)
+
+# 7. Pick the vlues of dict and make that as thekey of new dict while values should be even or odd
+
+dict_name={"Ankit" : 5, "Anisha" : 6, "Rafi" :4, "pooja" : 5}
+ans6={i:"Even" if i%2==0 else "Odd" for i in dict_name.values()}
+print(ans6)
