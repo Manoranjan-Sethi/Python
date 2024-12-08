@@ -22,7 +22,7 @@ def sum1(a, b):
 
 print(sum1(10, 20))
 
-# user input for sum of two numbers
+# 2. user input for sum of two numbers
 
 def sum2():
       a=int(input("Enter the first number to add: "))
@@ -42,4 +42,3 @@ def passByValue(var1,var2):
     print(z,y)
 
 passByValue(68,34)
-
