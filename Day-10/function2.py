@@ -41,8 +41,43 @@ uniqueList=[]
 count=0
 
 for i in list1:
-    for j in list1:
-        if i!=j+2:
-            # uniqueList.append(j)
-            print(j)
-# print(uniqueList)
+    if i not in uniqueList:
+            uniqueList.append(i)
+            # print(i)
+print(f"Unique List->{uniqueList}")
+
+"""
+Map -> eliminates the loop from the function
+    -> helps in type casting answer in desired data types
+    -> used while calling the function
+    
+    syntax-> data-type(map(function_name,iterable)) 
+"""
+list1=[1,2,3,3,4,4,78,78,5]
+
+# type 1 general
+def OddEven(a): 
+    even=[]
+    odd=[]
+    for i in a:
+        if i%2==0:
+            even.append(i)
+        else:
+            odd.append(i)
+    print(f"Even->{even} and Odd->{odd}")
+
+OddEven(list1)
+
+# type 2 with map
+
+def oddEvenMap(b):
+    if b%2==0:
+        return "even"
+    else:
+        return "odd"
+
+print(oddEvenMap(6)) #primitive
+
+#syntax-> data-type(map(function_name,iterable)) -> Non-primitive
+print(list(map(oddEvenMap,list1)))
+

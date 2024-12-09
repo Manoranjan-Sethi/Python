@@ -1,0 +1,2 @@
+
+print(oddEvenMap(6))
