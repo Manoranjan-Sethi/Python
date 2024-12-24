@@ -56,7 +56,6 @@ Here’s a list of topics I’m covering:
 - Scripting simple DevOps tasks.
 
 ### 🔄 In Progress:
-- Exploring Python libraries like `os`, `shutil`, and `logging` for system administration.
 - Integrating Python with **CI/CD pipelines**.
 
 ---
